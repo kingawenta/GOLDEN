@@ -22,6 +22,11 @@ section.picture{
   width:100%;
   background-size: cover;
 }
+.inside{
+  background-color: white;
+  width:289px;
+  margin:auto;
+}
 .logo{
   color:#E7C71B;
   font-family: 'Pacifico', cursive;
@@ -53,7 +58,8 @@ h3{
   font-size:40px;
   font-weight:600;
   text-align: center;
-  padding-top:30px;
+  padding-top:70px;
+  margin-top:0;
   margin-bottom:5px;
 }
 h5{
@@ -110,7 +116,6 @@ span{
 }
 .portfolio {
   background-color: #f7f9f9;
-  padding-top:25px;
 }
 .nav-link{
   color:white;
