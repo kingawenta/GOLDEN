@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 .fas {
   font-size: 30px;
   color: #E7C71B;
@@ -12,6 +16,7 @@
 
 .col-4 {
   text-align: center;
+  margin-bottom: 50px;
 }
 
 section.picture {
@@ -24,8 +29,8 @@ section.picture {
 .logo {
   color: #E7C71B;
   font-family: 'Pacifico', cursive;
-  font-size: 25px;
-  margin-left: 200px;
+  font-size: 30px;
+  padding-left: 50px;
 }
 
 h1 {
@@ -56,14 +61,16 @@ h3 {
   font-weight: 600;
   text-align: center;
   padding-top: 30px;
+  margin-bottom: 5px;
 }
 
 h5 {
   font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   font-weight: 400;
-  padding-top: 10px;
+  padding: 10px;
   text-align: center;
+  margin: 0;
 }
 
 span {
@@ -80,6 +87,7 @@ span {
   font-size: 12px;
   color: grey;
   font-weight: bold;
+  margin-bottom: 70px;
 }
 
 .container-fluid {
@@ -89,10 +97,11 @@ span {
 
 .but {
   text-align: center;
-  margin: 0 0 40px 0;
+  padding: 0 0 30px 0;
+  justify-content: center;
 }
 
-button {
+.button {
   font-family: 'Montserrat', sans-serif;
   font-size: 20px;
   color: white;
@@ -103,7 +112,21 @@ button {
   background: #E7C71B;
   border-radius: 5%;
   border: none;
+  width: 250px;
   margin-bottom: 100px;
+}
+
+.welcome {
+  margin-top: 120px;
+}
+
+.golden {
+  padding-top: 20px;
+}
+
+.portfolio {
+  background-color: #f7f9f9;
+  padding-top: 25px;
 }
 
 .nav-link {
@@ -111,12 +134,19 @@ button {
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 700;
-  font-size: 13px;
+  font-size: 15px;
   letter-spacing: 2px;
+  text-decoration: none;
 }
 
-nav {
-  margin-bottom: 150px;
+.navbar-nav {
+  display: flex;
+  justify-content: center;
+  list-style-type: none;
+}
+
+li {
+  margin-right: 15px;
 }
 
 .social-media {
@@ -124,10 +154,13 @@ nav {
   list-style-type: none;
   flex-wrap: wrap;
   text-align: center;
+  margin: 40px 0;
+  padding: 0;
 }
 
 .med {
-  justify-content: center;
+  text-align: center;
+  margin: 56px 0;
 }
 
 .pol {
@@ -152,6 +185,7 @@ nav {
 
 .photo {
   border: none;
+  text-align: center;
 }
 
 .copy {
@@ -167,8 +201,16 @@ nav {
 }
 
 @media (max-width: 576px) {
-  .photo, .col-4 {
+  .photo, .col-4, .golden {
     flex-direction: column;
+    text-align: center;
+  }
+  h1 {
+    font-size: 40px;
+  }
+  h2 {
+    font-size: 30px;
   }
 }
-/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uL3Nhc3Mvc3R5bGUuc2NzcyIsInN0eWxlLmNzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTtFQUNFLGVBQWM7RUFDZCxjQUFhO0VBQ2IseUJBQXlCO0VBQ3pCLGtCQUFrQjtFQUNsQixrQkFBaUI7RUFDakIsYUFBWTtFQUNaLFdBQVU7RUFDVixZQUFXO0VBQ1gsWUFBVztBQ0NiOztBRENBO0VBQ0Usa0JBQWlCO0FDRW5COztBREFBO0VBQ0UsbUVBQW1FO0VBQ25FLFlBQVc7RUFDWCxXQUFVO0VBQ1Ysc0JBQXNCO0FDR3hCOztBRERBO0VBQ0UsY0FBYTtFQUNiLGdDQUFnQztFQUNoQyxlQUFjO0VBQ2Qsa0JBQWlCO0FDSW5COztBREZBO0VBQ0UscUNBQXFDO0VBQ3JDLGVBQWM7RUFDZCxZQUFXO0VBQ1gseUJBQXlCO0VBQ3pCLGdCQUFlO0VBQ2Ysa0JBQWlCO0VBQ2pCLGNBQWE7RUFDYixhQUFZO0FDS2Q7O0FESEE7RUFDRSxZQUFXO0VBQ1gsaUNBQWlDO0VBQ2pDLGVBQWM7RUFDZCxpQkFBaUI7RUFDakIsa0JBQWlCO0VBQ2pCLDBCQUEwQjtFQUMxQixrQkFBaUI7RUFDakIsZ0JBQWdCO0FDTWxCOztBREpBO0VBQ0UscUNBQXFDO0VBQ3JDLGVBQWM7RUFDZCxnQkFBZTtFQUNmLGtCQUFrQjtFQUNsQixpQkFBZ0I7QUNPbEI7O0FETEE7RUFDRSxxQ0FBcUM7RUFDckMsZUFBYztFQUNkLGdCQUFlO0VBQ2YsaUJBQWdCO0VBQ2hCLGtCQUFrQjtBQ1FwQjs7QUROQTtFQUNFLGlDQUFpQztFQUNqQyxrQkFBa0I7RUFDbEIsZUFBZTtFQUNmLFdBQVU7QUNTWjs7QURQQTtFQUNFLGlDQUFpQztFQUNqQyxrQkFBaUI7RUFDakIsa0JBQWtCO0VBQ2xCLGVBQWU7RUFDZixXQUFVO0VBQ1YsaUJBQWlCO0FDVW5COztBRFJBO0VBQ0Usa0JBQWtCO0VBQ2xCLGdCQUFlO0FDV2pCOztBRFRBO0VBQ0Usa0JBQWtCO0VBQ2xCLGtCQUFpQjtBQ1luQjs7QURWQTtFQUNFLHFDQUFxQztFQUNyQyxlQUFjO0VBQ2QsWUFBVztFQUNYLHlCQUF5QjtFQUN6QixnQkFBZTtFQUNmLGtCQUFpQjtFQUNqQixrQkFBaUI7RUFDakIsbUJBQWtCO0VBQ2xCLGlCQUFpQjtFQUNqQixZQUFXO0VBQ1gsb0JBQW9CO0FDYXRCOztBRFhBO0VBQ0UsWUFBVztFQUNYLHlCQUF5QjtFQUN6QixxQ0FBcUM7RUFDckMsZ0JBQWU7RUFDZixlQUFjO0VBQ2QsbUJBQW1CO0FDY3JCOztBRFpBO0VBQ0Usb0JBQW1CO0FDZXJCOztBRGJBO0VBQ0ksYUFBWTtFQUNaLHFCQUFxQjtFQUNyQixlQUFlO0VBQ2Ysa0JBQWtCO0FDZ0J0Qjs7QURkQTtFQUNFLHVCQUF1QjtBQ2lCekI7O0FEZkE7RUFDSSxlQUFjO0VBQ2QsYUFBWTtFQUNaLGtCQUFrQjtFQUNsQixzQkFBcUI7RUFDckIsc0JBQXNCO0VBQ3RCLFlBQVc7RUFDWCxXQUFVO0VBQ1Ysa0JBQWlCO0VBQ2pCLHVCQUF1QjtBQ2tCM0I7O0FEaEJBO0VBQ0UsV0FBVztFQUNYLG1CQUFtQjtFQUNuQixrQkFBa0I7RUFDbEIsa0JBQWtCO0VBQ2xCLGlCQUFpQjtBQ21CbkI7O0FEakJBO0VBQ0UsWUFBVztBQ29CYjs7QURsQkE7RUFDRSxlQUFjO0VBQ2QsWUFBVztFQUNYLGlDQUFnQztBQ3FCbEM7O0FEbkJBO0VBQ0U7SUFDRSxlQUFjO0VDc0JoQjtBQUNGOztBRHBCQTtFQUNFO0lBQ0Usc0JBQXNCO0VDdUJ4QjtBQUNGIiwiZmlsZSI6InN0eWxlLmNzcyJ9 */
+
+/*# sourceMappingURL=style.css.map */
